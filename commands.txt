@@ -24,3 +24,9 @@ THE COMMAND ABOVE CREATES A DOCKER CONTAINER
 docker-compose up
 
 THE COMMAND ABOVE RUNS A DOCKER CONTAINER
+
+docker-compose build
+docker-compose run --rm app django-admin startproject core . 
+docker-compose up
+docker exec -it django_app /bin/bash
+
