@@ -1,0 +1,26 @@
+#commands used so far.
+COMMAND 1 
+docker build --tag python-django
+THIS MAKES AN ERROR ON PUBLISHING. BASED ON STACKOVERFLOW USE THE BELOW CODE.
+docker tag firstimage YOUR_DOCKERHUB_NAME/firstimage
+
+
+COMMAND 2
+
+docker run --publish 8000:8000 python-django
+
+
+/////////////////
+
+docker-compose build 
+
+THE COMMAND ABOVE CREATES A DOCKER IMAGE
+
+
+docker-compose run --rm app django-admin startproject core . 
+
+THE COMMAND ABOVE CREATES A DOCKER CONTAINER
+
+docker-compose up
+
+THE COMMAND ABOVE RUNS A DOCKER CONTAINER
